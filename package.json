@@ -1,0 +1,19 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "backend server for my mod5 project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/mmevans/mod5_project_backend.git"
+  },
+  "author": "Michael Evans",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mmevans/mod5_project_backend/issues"
+  },
+  "homepage": "https://github.com/mmevans/mod5_project_backend#readme"
+}
