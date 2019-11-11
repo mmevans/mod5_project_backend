@@ -1,7 +1,7 @@
 module.exports = (app, knex) => {
 
     app.get('/collections', async (req, res) => {
-        let collection = await knex('collections').select()
+        var collection = await knex('collections').select()
         res.json(collection)
     })
 
@@ -12,9 +12,11 @@ module.exports = (app, knex) => {
         res.json(newCollection)
     })
 
-    app.get('/collection/:id', async (req, res) => {
+    app.get('/collections/:id', async (req, res) => {
         const { id } = req.params;
-        let [ collection ] = await knex('collections').where({ id }).select()
+        const collection = await knex('collection').where({id}).select()
+
+        res.json(collection)
         // create the card controller first. from here, call all the card that have the collection_id
     })
 }

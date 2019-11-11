@@ -1,8 +1,8 @@
-module.exports = (app) => {
-    const express = require('express')
-    const app = express()
+const express = require('express');
+const router = express.Router();
 
-    var server = app.listen(3000, function() {
-        console.log('this server is listening on port 3000')
-    })
-}
+router.get('/join', (req, res) => {
+    res.send('server is up and runnning')
+})
+
+module.exports = router

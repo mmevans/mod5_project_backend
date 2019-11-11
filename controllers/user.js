@@ -20,4 +20,9 @@ module.exports = (app, knex) => {
        await knex('users').insert(newUser)
        res.json(newUser)
     })
+
+    app.get('/users/:id', async (req, res) => {
+        let user = await knex('users').where({id: req.params.id})
+        res.json(user)
+    })
 }
