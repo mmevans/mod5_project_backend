@@ -32,25 +32,30 @@ exports.seed = async function(knex) {
     {prompt: "A great use for a dirty diaper"},
     {prompt: "How old-timey sailors passed the time on long voyages"},
     {prompt: "You know your baby boy is growing up too fast when he starts to _____"},
-    {prompt: "Why the fish in your aquarium hate you"}
+    {prompt: "Why the fish in your aquarium hate you"},
+    {prompt: "What's wrong with kids today?"},
+    {prompt: "Fastest way to kill a meme?"}
+
   ])
 
   await knex('collectioncards').insert([
     {collection_id: knex('collections').first('id'), card_id: knex('cards').first('id')},
-    {collection_id: knex('collections').first('id'), card_id: 31},
-    {collection_id: knex('collections').first('id'), card_id: 32},
-    {collection_id: knex('collections').first('id'), card_id: 33},
-    {collection_id: knex('collections').first('id'), card_id: 34},
-    {collection_id: knex('collections').first('id'), card_id: 35},
-    {collection_id: knex('collections').first('id'), card_id: 36},
-    {collection_id: knex('collections').first('id'), card_id: 37},
-    {collection_id: knex('collections').first('id'), card_id: 38},
-    {collection_id: knex('collections').first('id'), card_id: 39},
-    {collection_id: knex('collections').first('id'), card_id: 40},
-    {collection_id: knex('collections').first('id'), card_id: 41},
-    {collection_id: knex('collections').first('id'), card_id: 42},
-    {collection_id: knex('collections').first('id'), card_id: 43},
-    {collection_id: knex('collections').first('id'), card_id: 44},
-    {collection_id: knex('collections').first('id'), card_id: 45},
+    {collection_id: knex('collections').first('id'), card_id: 2},
+    {collection_id: knex('collections').first('id'), card_id: 3},
+    {collection_id: knex('collections').first('id'), card_id: 4},
+    {collection_id: knex('collections').first('id'), card_id: 5},
+    {collection_id: knex('collections').first('id'), card_id: 6},
+    {collection_id: knex('collections').first('id'), card_id: 7},
+    {collection_id: knex('collections').first('id'), card_id: 8},
+    {collection_id: knex('collections').first('id'), card_id: 9},
+    {collection_id: knex('collections').first('id'), card_id: 10},
+    {collection_id: knex('collections').first('id'), card_id: 11},
+    {collection_id: knex('collections').first('id'), card_id: 12},
+    {collection_id: knex('collections').first('id'), card_id: 13},
+    {collection_id: knex('collections').first('id'), card_id: 14},
+    {collection_id: knex('collections').first('id'), card_id: 15},
+    {collection_id: knex('collections').first('id'), card_id: 16},
+    {collection_id: knex('collections').first('id'), card_id: 17},
+    {collection_id: knex('collections').first('id'), card_id: 18},
   ])
 };

@@ -1,5 +1,4 @@
 
-
 module.exports = (app, knex) => {
 
     app.get('/cards', async (req, res) => {

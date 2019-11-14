@@ -13,9 +13,7 @@ const createGameMaster = ({id, name, room}) => {
 
 const getGameMaster = (room) => {
     room = room.trim().toLowerCase()
-
     const gameMaster = gameMasters.find((player) => player.room === room)
-
     return gameMaster
 }
 
